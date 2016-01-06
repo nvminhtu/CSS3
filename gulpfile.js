@@ -9,6 +9,13 @@ gulp.task('serve', function() {
     });
 
     gulp.watch("*.html").on('change', browserSync.reload);
+    gulp.watch("*.css", ['sass']);
 });
+
+gulp.task('sass', function() {
+    return gulp.src("*.css")
+        .pipe(reload({stream: true}));
+});
+
 
 gulp.task('default', ['serve']);
