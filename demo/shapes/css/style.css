@@ -1,0 +1,111 @@
+#square {
+	width: 140px;
+	height: 140px;
+	background: blue;
+}
+
+#circle {
+	width: 140px;
+	height: 140px;
+	background: blue;
+	-moz-border-radius: 70px;
+	-webkit-border-radius: 70px;
+	border-radius: 70px;
+}
+
+#columniform {
+	width: 140px;
+	height: 140px;
+	background: blue;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+#oval {
+	width: 100px;
+	height: 50px;
+	background: blue;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+
+#up-triangle {
+	width: 0;
+	height: 0;
+	border-bottom: 120px solid blue;
+	border-left: 60px solid transparent;
+	border-right: 60px solid transparent;
+}
+
+#down-triangle {
+	width: 0;
+	height: 0;
+	border-top: 240px solid blue;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;	
+}
+
+#left-triangle {
+	width: 0;
+	height: 0;
+	border-right: 120px solid blue;
+	border-top: 60px solid transparent;
+	border-bottom: 60px solid transparent;	
+}
+
+#right-triangle {
+	width: 0;
+	height: 0;
+	border-top: 60px solid transparent;
+	border-left: 120px solid blue;
+	border-bottom: 60px solid transparent;	
+}
+
+#top-right-triangle {
+	width: 0;
+	height: 0;
+	border-top: 120px solid blue;
+	border-left: 120px solid transparent;
+}
+
+#top-left-triangle {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+	border-left: 120px solid blue;
+}
+
+#bottom-right-triangle {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+	border-right: 120px solid blue;
+}
+
+#bottom-left-triangle {
+	width: 0;
+	height: 0;
+	border-top: 120px solid transparent;
+	border-left: 120px solid blue;
+}
+
+#diamond {
+	width: 80px; 
+   height: 80px; 
+   background: blue;
+   margin: 3px 0 0 30px;
+   /* Rotate */
+   -webkit-transform: rotate(-45deg);
+   -moz-transform: rotate(-45deg);
+   -ms-transform: rotate(-45deg);
+   -o-transform: rotate(-45deg);
+   transform: rotate(-45deg);
+   /* Rotate Origin */
+   /*-webkit-transform-origin: 0 100%;
+   -moz-transform-origin: 0 100%;
+   -ms-transform-origin: 0 100%;
+   -o-transform-origin: 0 100%;
+   transform-origin: 0 100%;*/
+}
