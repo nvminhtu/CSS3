@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cross Browser tutorial</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+	<h3>#1.IE Conditional Comments</h3>
+	<ul>
+		<li><pre><code><!--[if IE 8]><![endif]--></code></pre><span>IE8</span></li>
+		<li><!--[if lt IE 8]><![endif]--><span>IE7 or below</span></li>
+		<li><!--[if gte IE 8]><![endif]--><span>greater than or equal to IE8</span></li>
+	</ul>
+	<div class="box">
+		<pre><code>&lt;!--[if IE 8]&gt;
+			&lt;style type=&quot;text/css&quot;&gt;
+				/* css for IE 8 */
+			&lt;/style&gt;
+			&lt;![endif]--&gt;
+
+			&lt;!--[if lt IE 8]&gt;
+				&lt;link href=&quot;ie7.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;
+			&lt;![endif]--&gt;</code></pre>
+	</div>
+	<h3>#2.Write CSS rule with IE8</h3>
+	<div class="box">
+		.box {
+			background: gray; /*standard*/
+			background: pink\9; /* IE 8 and below */
+			*background: green; /* IE 7 and below */
+			_background: blue; /* IE 6 */	
+		}
+	<!-- /.box --></div>
+	<h3>#3.Conditional HTML Class</h3>
+	<div class="box">
+		<pre><code>&lt;!--[if lt IE 7 ]&gt; &lt;html class=&quot;ie6&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 7 ]&gt; &lt;html class=&quot;ie7&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 8 ]&gt; &lt;html class=&quot;ie8&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if IE 9 ]&gt; &lt;html class=&quot;ie9&quot;&gt; &lt;![endif]--&gt;
+&lt;!--[if (gt IE 9)|!(IE)]&gt;&lt;!--&gt; &lt;html&gt; &lt;!--&lt;![endif]--&gt;</code></pre>
+
+	<!-- /.box --></div>
+</body>
+</html>
